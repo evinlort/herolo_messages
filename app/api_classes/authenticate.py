@@ -1,7 +1,7 @@
-from api_classes.users import Users
+from app.api_classes.users import Users
 import jwt
 import datetime
-from helpers.configs import key
+from app.helpers.configs import key
 
 
 class Authenticate(Users):

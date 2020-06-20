@@ -1,4 +1,4 @@
-from api_classes.messages import Messages
+from app.api_classes.messages import Messages
 
 
 class GetAllMessages(Messages):

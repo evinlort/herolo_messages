@@ -2,7 +2,7 @@ from functools import wraps
 
 import jwt
 from flask import request
-from helpers.configs import key
+from app.helpers.configs import key
 
 
 def validate(f):

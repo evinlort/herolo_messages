@@ -1,9 +1,9 @@
-from helpers.json import json_dumps
+from app.helpers.json import json_dumps
 from flask import Flask, request
 from flask_api import status
-from decorators.validate import validate, validate_token
+from app.decorators.validate import validate, validate_token
 
-from functions import *
+from app.functions import *
 
 app = Flask(__name__)
 

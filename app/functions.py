@@ -1,9 +1,9 @@
-from api_classes.authenticate import Authenticate
-from api_classes.delete_message import DeleteMessage
-from api_classes.get_all import GetAllMessages
-from api_classes.get_all_unread import GetAllUnreadMessages
-from api_classes.read import Read
-from api_classes.save_message import SaveMessage
+from app.api_classes.authenticate import Authenticate
+from app.api_classes.delete_message import DeleteMessage
+from app.api_classes.get_all import GetAllMessages
+from app.api_classes.get_all_unread import GetAllUnreadMessages
+from app.api_classes.read import Read
+from app.api_classes.save_message import SaveMessage
 
 
 def get_auth_token(credentials):

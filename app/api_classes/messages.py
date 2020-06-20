@@ -1,4 +1,4 @@
-from api_classes.mongo import Mongo
+from app.api_classes.mongo import Mongo
 
 
 class Messages(Mongo):

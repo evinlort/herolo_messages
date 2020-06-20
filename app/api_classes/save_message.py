@@ -19,10 +19,10 @@ class SaveMessage(Messages):
         return str(inserted)
 
     def generate_inc_id(self):
-        last_id = self.messages.find({}, {"id": 1,"_id": 0}).sort("id", pymongo.DESCENDING).limit(1)[0]
+        last_id = self.messages.find({}, {"id": 1, "_id": 0}).sort("id", pymongo.DESCENDING).limit(1)
 
-        if len(last_id) == 0:
+        if last_id.count() == 0:
             last_id = 1
         else:
-            last_id = last_id["id"] + 1
+            last_id = last_id[0]["id"] + 1
         return last_id
